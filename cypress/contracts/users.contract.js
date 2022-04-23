@@ -4,9 +4,9 @@ const usuariosSchema = Joi.object({
     quantidade: Joi.number(), 
     usuarios: Joi.array().items({
         nome: Joi.string(),
-        email: Joi.number(),
+        email: Joi.string(),
         password: Joi.string(),
-        administrador: Joi.number(),
+        administrador: Joi.string(),
         _id: Joi.string()
     })
 })
